@@ -27,4 +27,7 @@ contract HelloWorld {
       message = newMessage;
       emit UpdatedMessages(oldMsg, newMessage);
    }
+   function messageHello() public view returns(string memory) {
+      return message;
+   }
 }
